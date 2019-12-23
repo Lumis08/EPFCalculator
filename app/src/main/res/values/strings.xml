@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EPF Calculator</string>
+
+    <string name="dob">Date of Birth :</string>
+    <string name="age">Age :</string>
+    <string name="minBasicSave">Min. Basic Saving :</string>
+    <string name="allowInvest">Allowable Investment :</string>
+
+    <string name="defaultAge">0</string>
+    <string name="defaultAmt">RM 0.0</string>
+</resources>

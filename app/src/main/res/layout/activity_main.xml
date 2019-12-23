@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewDOB"
+        style="@style/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/dob"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAge"
+        style="@style/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/age"
+        app:layout_constraintStart_toStartOf="@+id/textViewDOB"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDOB" />
+
+    <TextView
+        android:id="@+id/textViewMinBasicSave"
+        style="@style/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/minBasicSave"
+        app:layout_constraintStart_toStartOf="@+id/textViewAge"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAge" />
+
+    <TextView
+        android:id="@+id/textViewAllowInvest"
+        style="@style/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/allowInvest"
+        app:layout_constraintStart_toStartOf="@+id/textViewMinBasicSave"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMinBasicSave" />
+
+    <TextView
+        android:id="@+id/textViewDOBResult"
+        style="@style/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDOB"
+        app:layout_constraintStart_toEndOf="@+id/textViewDOB"
+        app:layout_constraintTop_toTopOf="@+id/textViewDOB" />
+
+    <TextView
+        android:id="@+id/textViewAgeResult"
+        style="@style/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/defaultAge"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewAge"
+        app:layout_constraintStart_toEndOf="@+id/textViewAge"
+        app:layout_constraintTop_toTopOf="@+id/textViewAge" />
+
+    <TextView
+        android:id="@+id/textViewMinBasicSaveResult"
+        style="@style/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/defaultAmt"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewMinBasicSave"
+        app:layout_constraintStart_toEndOf="@+id/textViewMinBasicSave"
+        app:layout_constraintTop_toTopOf="@+id/textViewMinBasicSave" />
+
+    <TextView
+        android:id="@+id/textViewAllowInvestResult"
+        style="@style/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/defaultAmt"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewAllowInvest"
+        app:layout_constraintStart_toEndOf="@+id/textViewAllowInvest"
+        app:layout_constraintTop_toTopOf="@+id/textViewAllowInvest" />
+</androidx.constraintlayout.widget.ConstraintLayout>
